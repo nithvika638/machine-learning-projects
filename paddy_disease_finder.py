@@ -5,17 +5,16 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
-import requests
+import gdown
 st.title("paddy crop disease detection ")
 st.write("Upload an image of rice to detect the disease ")
-url = "https"//github.com/nithvika638/machine-learning-projects/model/vgg16_rice_model.h5"
-output_path = "vgg16_rice_model.h5"
-response = requests.get(url, stream=True)
-with open(output_path, "wb") as file:
-    for chunk in response.iter_content(chunk_size=8192):
-        file.write(chunk)
-DATA_PATH = output_path
-model = load_model(DATA_PATH)
+file_id = "1WEA2DB_oTU5ok5T9drUsBm19IXrAmee1"
+model_path = "vgg16_rice_model.h5"
+https://drive.google.com/file/d/1WEA2DB_oTU5ok5T9drUsBm19IXrAmee1/view?usp=drive_link
+if not os.path.exists(model_path):
+    url = f"https://drive.google.com/file/d/1WEA2DB_oTU5ok5T9drUsBm19IXrAmee1/view?usp=drive_link"
+    gdown.download(url, model_path, quiet=False)
+model = load_model(model_path)
 classes = ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro']
 upld_img = st.file_uploader("Choose an image ", type=["jpg", "png", "jpeg"])
 if upld_img is not None:
