@@ -7,7 +7,9 @@ import numpy as np
 from PIL import Image
 st.title("paddy crop disease detection ")
 st.write("Upload an image of rice to detect the disease ")
-model = tf.keras.models.load_model("C:/Users/karur/Downloads/vgg16_rice_model.h5")
+from google_drive_downloader import GoogleDriveDownloader as gdd
+gdd.download_file_from_google_drive(dest_path="./your_large_model.h5",unzip=False)
+model = tf.keras.models.load_model("your_large_model.h5")
 classes = ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro']
 upld_img = st.file_uploader("Choose an image ", type=["jpg", "png", "jpeg"])
 if upld_img is not None:
