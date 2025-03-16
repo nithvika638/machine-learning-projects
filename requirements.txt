@@ -4,4 +4,4 @@ pandas
 Pillow
 matplotlib
 Streamlit 
-google_drive_downloader
+gdown
