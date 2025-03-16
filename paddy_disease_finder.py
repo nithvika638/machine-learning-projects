@@ -15,6 +15,7 @@ with open(output_path, "wb") as file:
     for chunk in response.iter_content(chunk_size=8192):
         file.write(chunk)
 DATA_PATH = output_path
+model = load(DATA_PATH)
 classes = ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro']
 upld_img = st.file_uploader("Choose an image ", type=["jpg", "png", "jpeg"])
 if upld_img is not None:
