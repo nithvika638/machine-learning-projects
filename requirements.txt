@@ -3,5 +3,4 @@ numpy
 pandas
 Pillow
 matplotlib
-Python 3.10.0
 Streamlit 
