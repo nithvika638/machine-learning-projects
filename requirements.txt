@@ -5,5 +5,5 @@ Pillow
 matplotlib
 tensorflow.keras.models
 tensorflow.keras.preprocessing
-Python 3.10
-Streamlit 1.10
+Python 
+Streamlit 
