@@ -10,9 +10,8 @@ st.title("paddy crop disease detection ")
 st.write("Upload an image of rice to detect the disease ")
 file_id = "1WEA2DB_oTU5ok5T9drUsBm19IXrAmee1"
 model_path = "vgg16_rice_model.h5"
-https://drive.google.com/file/d/1WEA2DB_oTU5ok5T9drUsBm19IXrAmee1/view?usp=drive_link
 if not os.path.exists(model_path):
-    url = f"https://drive.google.com/file/d/1WEA2DB_oTU5ok5T9drUsBm19IXrAmee1/view?usp=drive_link"
+    url =f"https://drive.google.com/uc?id={file_id}"
     gdown.download(url, model_path, quiet=False)
 model = load_model(model_path)
 classes = ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro']
