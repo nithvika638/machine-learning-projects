@@ -5,6 +5,5 @@ Pillow
 matplotlib
 tensorflow.keras.models
 tensorflow.keras.preprocessing
-pip install --upgrade --force-reinstall pip
 Python 3.10
 Streamlit 1.10
