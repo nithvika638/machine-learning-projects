@@ -1,9 +1,10 @@
-streamlit
 tensorflow
 numpy
 pandas
 Pillow
 matplotlib
-os
 tensorflow.keras.models
 tensorflow.keras.preprocessing
+OS: Windows 10+, macOS 11+, or Ubuntu 20.04+
+Python 3.8+
+Streamlit 1.10+
