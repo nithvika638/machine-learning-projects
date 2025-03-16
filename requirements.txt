@@ -6,5 +6,5 @@ matplotlib
 tensorflow.keras.models
 tensorflow.keras.preprocessing
 python -m pip install --upgrade --force-reinstall pip
-Python 3.9
+Python 3.10
 Streamlit 1.10
