@@ -5,6 +5,7 @@ Pillow
 matplotlib
 tensorflow.keras.models
 tensorflow.keras.preprocessing
-OS: Windows 10+
+OS: Windows 10
+OS: Windows 11
 Python 3.8+
 Streamlit 1.10+
