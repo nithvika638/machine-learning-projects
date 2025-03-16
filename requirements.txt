@@ -3,7 +3,5 @@ numpy
 pandas
 Pillow
 matplotlib
-tensorflow.keras.models
-tensorflow.keras.preprocessing
 Python 
 Streamlit 
