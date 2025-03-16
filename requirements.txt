@@ -5,3 +5,5 @@ pandas
 Pillow
 matplotlib
 os
+tensorflow.keras.models
+tensorflow.keras.preprocessing
