@@ -20,6 +20,7 @@ if upld_img is not None:
     img_array /= 255.0  
     st.image(img, caption="Uploaded Image", use_container_width=True)
     st.write("processing.. !")
+    
     predictions = model.predict(img_array)
     st.write(f"Prediction: {classes[np.argmax(predictions)]}")
     st.write(f"Confidence: {np.max(predictions)*100:.2f}")
