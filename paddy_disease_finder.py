@@ -7,9 +7,10 @@ import numpy as np
 from PIL import Image
 st.title("paddy crop disease detection ")
 st.write("Upload an image of rice to detect the disease ")
-MODEL_PATH = "C:/Users/karur/Downloads/vgg16_rice_model.h5"
-if os.path.exists(MODEL_PATH):
-    model = load_model(MODEL_PATH)
+def load_model():
+    return tf.keras.models.load_model("path/to/your_model.h5")
+
+model = load_model()
 classes = ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro']
 upld_img = st.file_uploader("Choose an image ", type=["jpg", "png", "jpeg"])
 if upld_img is not None:
